@@ -1,8 +1,8 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
-title: "Dashboard"
-subtitle: "app.jyje.online"
-logo: "https://jyje.online/assets/icons/icon-square-256x256.png"
+title: Dashboard
+subtitle: app.jyje.online
+logo: assets/icons/pwa-192x192.png
 # icon: "fa-solid fa-m" # Optional icon
 connectivityCheck: true
 defaults:

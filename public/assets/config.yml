@@ -42,6 +42,7 @@ colors:
     card-shadow: rgba(0, 0, 0, 0.4)
     link: "#3273dc"
     link-hover: "#ffdd57"
+
 # Optional message
 message:
   #url: https://b4bz.io
@@ -50,24 +51,33 @@ message:
   # icon: fa fa-grin
   icon: fas fa-info
   content: |
-    This is a collection of applications for my demo cluster. It is not intended f
-# This is a dummy homepage demo. <br>
+    This is a collection of applications for my demo cluster. It is not intended for production use.
+
 # Find more information on <a href='https://github.com/bastienwirtz/homer'>github.
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Bio"
+  - name: "Dashboard"
+    icon: "fas fa-file-alt"
+    url: "#"
+    # target: "_blank"
+
+  - name: "Stack"
+    icon: "fas fa-layer-group"
+    url: "#stack"
+
+  - name: "About"
     icon: "fas fa-user-astronaut"
-    url: "https://jyje.online"
-    # target: "_blank" # optional html a tag target attribute
-  - name: "Blog"
-    icon: "fas fa-pen-to-square"
-    url: "https://blog.jyje.online"
-  # this will link to a second homer page that will load config from additional-pa
-  # see url field and assets/additional-page.yml.dist used in this example:
-  #- name: "another page!"
-  #  icon: "fas fa-file-alt"
-  #  url: "#additional-page"
+    url: "#about"
+
+  # - name: "Bio"
+  #   icon: "fas fa-user-astronaut"
+  #   url: "https://jyje.online"
+
+  # - name: "Blog"
+  #   icon: "fas fa-pen-to-square"
+  #   url: "https://blog.jyje.online"
+
 # Services
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are opt

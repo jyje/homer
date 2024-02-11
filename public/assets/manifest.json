@@ -1,12 +1,12 @@
 {
-    "name": "jyje dashboard",
-    "short_name": "dashboard",
+    "name": "r4spi-dashboard",
+    "short_name": "r4spi",
     "start_url": "../",
     "display": "standalone",
     "background_color": "#ffffff",
     "lang": "en",
     "scope": "../",
-    "description": "Home Server Dashboard",
+    "description": "Dashboard of Home Cluster r4spi",
     "theme_color": "#3367D6",
     "icons": [
       {

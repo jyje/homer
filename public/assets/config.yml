@@ -82,75 +82,60 @@ links:
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are opt
 services:
-- name: Applications
-  icon: fas fa-rocket
-  items:
-  - name: Grafana
-    type: Ping
-    logo: https://grafana.com/static/img/menu/grafana2.svg
-    subtitle: Cluster monitoring
-    tag: "grafana #monitoring #dashboard #plg"
-    url: https://grafana.app.jyje.online
-  - name: Argo Workflows
-    type: Ping
-    logo: https://argoproj.github.io/argo-workflows/assets/logo.png
-    subtitle: Workflow engine
-    tag: "argo-workflows #argo #workflow #pipeline #cicd"
-    url: https://workflow.app.jyje.online
-- name: Management
-  icon: fas fa-microchip
-  items:
-  - name: Homer
-    type: Ping
-    logo: logo.png
-    subtitle: This dashboard
-    tag: "homer #dashboard #monitoring"
-    url: https://app.jyje.online
-  - name: Portainer
-    # type: Portainer
-    # apikey: "ptr_qXkCiCTml2HK0Y9zrtJ2zLj9zVNJxQpnSAlYxjylhJU="
-    # environments:
-    # - "r4spi-microk8s"
-    type: Ping
-    logo: https://avatars.githubusercontent.com/u/22225832
-    subtitle: Cluster administration
-    tag: "portainer #admin #catalog"
-    url: "https://portainer.app.jyje.online"
-  - name: Argo CD
-    type: Ping
-    logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
-    subtitle: App deployment
-    tag: "argocd #argo #gitops #cicd"
-    url: https://cd.app.jyje.online
-  - name: Keycloak
-    type: Ping
-    logo: https://avatars.githubusercontent.com/u/4921466
-    subtitle: Access management
-    tag: "keycloak #login #iam #rabc"
-    url: https://keycloak.app.jyje.online
-- name: Database
-  icon: fas fa-database
-  items:
-  - name: CloudNativePG
-    logo: https://cloudnative-pg.io/images/hero_image.svg
-    subtitle: PostgreSQL operator
-    tag: "cnpg #operator #dbaas #psql #database"
-- name: Storage
-  icon: fas fa-hdd
-  items:
-  - name: OpenMediaVault
-    type: Ping
-    logo: https://avatars.githubusercontent.com/u/1897994
-    subtitle: NAS for NFS storage
-    tag: "omv #nas #nfs #storage"
-    url: https://omv.app.jyje.online
-  - name: Longhorn
-    logo: https://avatars.githubusercontent.com/u/51335366
-    subtitle: Block storage for Kubernetes
-    tag: "longhorn #storageclass #storage #rancher"
-  - name: MinIO
-    type: Ping
-    logo: https://min.io/resources/img/logo/MINIO_Bird.png
-    subtitle: Object storage for Kubernetes
-    tag: "minio #operator #dbaas #s3 #storage"
-    url: https://minio.app.jyje.online
+  - name: Applications
+    icon: fas fa-rocket
+    items:
+      - name: Grafana
+        type: Ping
+        logo: https://grafana.com/static/img/menu/grafana2.svg
+        subtitle: Cluster monitoring
+        tag: "grafana #monitoring #dashboard #plg"
+        url: https://grafana.app.jyje.online
+      - name: Argo Workflows
+        type: Ping
+        logo: https://argoproj.github.io/argo-workflows/assets/logo.png
+        subtitle: Workflow engine
+        tag: "argo-workflows #argo #workflow #pipeline #cicd"
+        url: https://workflow.app.jyje.online/workflows
+
+  - name: Management
+    icon: fas fa-microchip
+    items:
+      - name: Homer
+        type: Ping
+        logo: logo.png
+        subtitle: This dashboard
+        tag: "homer #dashboard #monitoring"
+        url: https://app.jyje.online
+      - name: Portainer
+        # type: Portainer
+        # apikey: "ptr_qXkCiCTml2HK0Y9zrtJ2zLj9zVNJxQpnSAlYxjylhJU="
+        # environments:
+        # - "r4spi-microk8s"
+        type: Ping
+        logo: https://avatars.githubusercontent.com/u/22225832
+        subtitle: Cluster administration
+        tag: "portainer #admin #catalog"
+        url: "https://portainer.app.jyje.online"
+      - name: Argo CD
+        type: Ping
+        logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+        subtitle: App deployment
+        tag: "argocd #argo #gitops #cicd"
+        url: https://cd.app.jyje.online
+      - name: Keycloak
+        type: Ping
+        logo: https://avatars.githubusercontent.com/u/4921466
+        subtitle: Access management
+        tag: "keycloak #login #iam #rabc"
+        url: https://keycloak.app.jyje.online
+
+  - name: Storage
+    icon: fas fa-hdd
+    items:
+      - name: OpenMediaVault
+        type: Ping
+        logo: https://avatars.githubusercontent.com/u/1897994
+        subtitle: NAS for NFS storage
+        tag: "omv #nas #nfs #storage"
+        url: https://omv.app.jyje.online

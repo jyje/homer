@@ -1,5 +1,5 @@
 ---
-# Additional page configuration
+# Additional 'stack' page configuration
 
 # Additional configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>). 
 # `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
@@ -13,12 +13,61 @@ message: ~
 # links: ~
 
 services:
-  - name: "More applications on another page!"
-    icon: "fas fa-cloud"
+  # - name: "More applications on another page!"
+  #   icon: "fas fa-cloud"
+  #   items:
+  #     - name: "Awesome app on a second page!"
+  #       logo: "assets/tools/sample.png"
+  #       subtitle: "Bookmark example"
+  #       tag: "app"
+  #       url: "https://www.reddit.com/r/selfhosted/"
+  #       target: "_blank"
+
+  - name: Infra
+    icon: fas fa-server
     items:
-      - name: "Awesome app on a second page!"
-        logo: "assets/tools/sample.png"
-        subtitle: "Bookmark example"
-        tag: "app"
-        url: "https://www.reddit.com/r/selfhosted/"
-        target: "_blank"
+      - name: Raspberry Pi (2x4B, 2x5B)
+        logo: https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg
+        subtitle: ARM64-based Micro Computers
+        tag: "raspi #arm #edge #iot #infra"
+        url: https://www.raspberrypi.com
+
+      - name: MicroK8s v1.30
+        logo: https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/ubuntu.svg
+        subtitle: Lightweight Kubernetes for Edge Devices
+        tag: "microk8s #cluster #k8s #canonical #infra"
+        url: https://microk8s.io
+
+      - name: Noctua NF-A12x25 PWM
+        logo: assets/tools/noctua-logo.png
+        subtitle: Silent Fan controlled by Raspberry Pi
+        tag: "noctua #cooling #fan #pwm #infra"
+        url: https://noctua.at/en/nf-a12x25-pwm
+
+      - name: ipTIME A3004NS-M
+        logo: assets/tools/iptime-logo.webp
+        subtitle: Home Router for Ingress Traffic
+        tag: "iptime #router #network #infra"
+        url: https://iptime.com/iptime
+
+  - name: Database
+    icon: fas fa-database
+    items:
+      - name: CloudNativePG
+        logo: https://cloudnative-pg.io/images/hero_image.svg
+        subtitle: PostgreSQL Operator
+        tag: "cnpg #operator #dbaas #psql #database"
+
+  - name: Storage
+    icon: fas fa-hdd
+    items:
+      - name: Longhorn
+        logo: https://avatars.githubusercontent.com/u/51335366
+        subtitle: Block storage for Kubernetes
+        tag: "longhorn #storageclass #storage #rancher"
+      - name: MinIO
+        type: Ping
+        logo: https://min.io/resources/img/logo/MINIO_Bird.png
+        subtitle: Object storage for Kubernetes
+        tag: "minio #operator #dbaas #s3 #storage"
+        url: https://minio.app.jyje.online

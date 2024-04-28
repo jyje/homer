@@ -13,16 +13,6 @@ message: ~
 # links: ~
 
 services:
-  # - name: "More applications on another page!"
-  #   icon: "fas fa-cloud"
-  #   items:
-  #     - name: "Awesome app on a second page!"
-  #       logo: "assets/tools/sample.png"
-  #       subtitle: "Bookmark example"
-  #       tag: "app"
-  #       url: "https://www.reddit.com/r/selfhosted/"
-  #       target: "_blank"
-
   - name: Infra
     icon: fas fa-server
     items:
@@ -49,6 +39,16 @@ services:
         subtitle: Home Router for Ingress Traffic
         tag: "iptime #router #network #infra"
         url: https://iptime.com/iptime
+
+  - name: CI/CD
+    icon: fas fa-arrows-spin
+    items:
+      - name: Argo CD
+        type: Ping
+        logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
+        subtitle: App deployment
+        tag: "argocd #argo #gitops #cicd"
+        url: https://cd.app.jyje.online
 
   - name: Database
     icon: fas fa-database

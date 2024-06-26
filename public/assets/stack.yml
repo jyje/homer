@@ -48,7 +48,7 @@ services:
         logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
         subtitle: App deployment
         tag: "argocd #argo #gitops #cicd"
-        url: https://cd.app.jyje.online
+        url: https://cd.app.jyje.live
 
   - name: Database
     icon: fas fa-database
@@ -70,4 +70,4 @@ services:
         logo: https://min.io/resources/img/logo/MINIO_Bird.png
         subtitle: Object storage for Kubernetes
         tag: "minio #operator #dbaas #s3 #storage"
-        url: https://minio.app.jyje.online
+        url: https://minio.app.jyje.live

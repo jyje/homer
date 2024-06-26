@@ -8,7 +8,7 @@ title: About
 
 # This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
 message: |
-  I'm Jeayoung Jeon. If you want to know more about me, please visit my personal website <a href="https://jyje.online">Jeayoung Jeon</a>.
+  I'm Jeayoung Jeon. If you want to know more about me, please visit my personal website <a href="https://jyje.live">Jeayoung Jeon</a>.
 
 # # as we want to include a differente link here (so we can get back to home page), we need to replicate all links or they will be revome when overwriting the links field:
 # links: ~
@@ -17,6 +17,6 @@ services:
   - name: Links
     icon: fas fa-layer-group
     items:
-      - name: jyje.online
-        logo: https://app.jyje.online/assets/icons/pwa-192x192.png
-        url: https://jyje.online
+      - name: jyje.live
+        logo: https://app.jyje.live/assets/icons/pwa-192x192.png
+        url: https://jyje.live

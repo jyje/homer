@@ -1,7 +1,7 @@
 # Homepage configuration
 # See https://fontawesome.com/v5/search for icons options
 title: Dashboard
-subtitle: app.jyje.online
+subtitle: app.jyje.live
 logo: assets/icons/pwa-192x192.png
 # icon: "fa-solid fa-m" # Optional icon
 connectivityCheck: true
@@ -10,8 +10,8 @@ defaults:
   colorTheme: light # One of 'auto', 'light', or 'dark'
 header: true
 footer: |
-  Since 2024 ⓒ <a href="https://app.jyje.online">app.jyje.online</a>
-  with <a href="https://jyje.online">Jeayoung Jeon</a>.
+  Since 2024 ⓒ <a href="https://app.jyje.live">app.jyje.live</a>
+  with <a href="https://jyje.live">Jeayoung Jeon</a>.
   Powered by <a href="https://github.com/bastienwirtz/homer">Homer</a>.
 # Optional theme customization
 theme: default
@@ -72,11 +72,11 @@ links:
 
   # - name: "Bio"
   #   icon: "fas fa-user-astronaut"
-  #   url: "https://jyje.online"
+  #   url: "https://jyje.live"
 
   # - name: "Blog"
   #   icon: "fas fa-pen-to-square"
-  #   url: "https://blog.jyje.online"
+  #   url: "https://blog.jyje.live"
 
 # Services
 # First level array represent a group.
@@ -90,13 +90,13 @@ services:
         logo: https://grafana.com/static/img/menu/grafana2.svg
         subtitle: Cluster monitoring
         tag: "grafana #monitoring #dashboard #plg"
-        url: https://grafana.app.jyje.online
+        url: https://grafana.app.jyje.live
       - name: Argo Workflows
         type: Ping
         logo: https://argoproj.github.io/argo-workflows/assets/logo.png
         subtitle: Workflow engine
         tag: "argo-workflows #argo #workflow #pipeline #cicd"
-        url: https://workflow.app.jyje.online/workflows
+        url: https://workflow.app.jyje.live/workflows
 
   - name: Management
     icon: fas fa-microchip
@@ -106,7 +106,7 @@ services:
         logo: logo.png
         subtitle: This dashboard
         tag: "homer #dashboard #monitoring"
-        url: https://app.jyje.online
+        url: https://app.jyje.live
       - name: Portainer
         # type: Portainer
         # apikey: "ptr_qXkCiCTml2HK0Y9zrtJ2zLj9zVNJxQpnSAlYxjylhJU="
@@ -116,19 +116,19 @@ services:
         logo: https://avatars.githubusercontent.com/u/22225832
         subtitle: Cluster administration
         tag: "portainer #admin #catalog"
-        url: "https://portainer.app.jyje.online"
+        url: "https://portainer.app.jyje.live"
       - name: Argo CD
         type: Ping
         logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
         subtitle: App deployment
         tag: "argocd #argo #gitops #cicd"
-        url: https://cd.app.jyje.online
+        url: https://cd.app.jyje.live
       - name: Keycloak
         type: Ping
         logo: https://avatars.githubusercontent.com/u/4921466
         subtitle: Access management
         tag: "keycloak #login #iam #rabc"
-        url: https://keycloak.app.jyje.online
+        url: https://keycloak.app.jyje.live
 
   - name: Storage
     icon: fas fa-hdd
@@ -138,4 +138,4 @@ services:
         logo: https://avatars.githubusercontent.com/u/1897994
         subtitle: NAS for NFS storage
         tag: "omv #nas #nfs #storage"
-        url: https://omv.app.jyje.online
+        url: https://omv.app.jyje.live

@@ -128,12 +128,12 @@ services:
         subtitle: App deployment
         tag: "argocd #argo #gitops #cicd"
         url: https://cd.app.jyje.live
-      - name: Keycloak
-        type: Ping
-        logo: https://avatars.githubusercontent.com/u/4921466
-        subtitle: Access management
-        tag: "keycloak #login #iam #rabc"
-        url: https://keycloak.app.jyje.live
+      # - name: Keycloak
+      #   type: Ping
+      #   logo: https://avatars.githubusercontent.com/u/4921466
+      #   subtitle: Access management
+      #   tag: "keycloak #login #iam #rabc"
+      #   url: https://keycloak.app.jyje.live
 
   - name: Storage
     icon: fas fa-hdd

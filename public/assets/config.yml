@@ -97,6 +97,11 @@ services:
         subtitle: Workflow engine
         tag: "argo-workflows #argo #workflow #pipeline #cicd"
         url: https://workflow.app.jyje.live/workflows
+      - name: Ollama WebUI
+        type: Ping
+        logo: https://ollama.com/public/ollama.png
+        subtitle: LLM on Raspberry Pi
+        tag: "open-webui #ollama #llm #webui"
 
   - name: Management
     icon: fas fa-microchip

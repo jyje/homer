@@ -72,14 +72,15 @@ services:
         tag: "minio #operator #dbaas #s3 #storage"
         url: https://minio.app.jyje.live
 
-  - name: AI
-    icon: fas fa-flask-gear
+  - name: AI/LLM
+    icon: fas fa-flask
     items:
       - name: Open WebUI
         logo: https://docs.openwebui.com/img/logo.png
-        subtitle: Machine Learning Library
+        subtitle: Open Source WebUI for LLM
         tag: "open-webui #ollama #llm #webui"
       - name: Ollama
         logo: https://ollama.com/public/ollama.png
+        subtitle: Open Source LLM
         tag: "ollama #llm #open-source #ai"
         url: https://ollama.com/library

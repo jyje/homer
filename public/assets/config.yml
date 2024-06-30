@@ -102,6 +102,7 @@ services:
         logo: https://ollama.com/public/ollama.png
         subtitle: LLM on Raspberry Pi
         tag: "open-webui #ollama #llm #webui"
+        url: https://ollama.app.jyje.live
 
   - name: Management
     icon: fas fa-microchip

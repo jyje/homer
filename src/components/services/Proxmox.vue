@@ -80,12 +80,12 @@ import Generic from "./Generic.vue";
 
 export default {
   name: "Proxmox",
+  components: {
+    Generic,
+  },
   mixins: [service],
   props: {
     item: Object,
-  },
-  components: {
-    Generic,
   },
   data: () => ({
     vms: {
@@ -172,9 +172,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.is-number {
-  font-family: "Lato";
-}
 .healthy {
   color: green;
 }

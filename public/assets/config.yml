@@ -139,9 +139,15 @@ services:
   - name: Storage
     icon: fas fa-hdd
     items:
-      - name: OpenMediaVault
+      - name: Milvus Attu
         type: Ping
-        logo: https://avatars.githubusercontent.com/u/1897994
-        subtitle: NAS for NFS storage
-        tag: "omv #nas #nfs #storage"
-        url: https://omv.app.jyje.live
+        logo: https://avatars.githubusercontent.com/u/18416694
+        subtitle: Vector database
+        tag: "attu #milvus #vectordb #ai"
+        url: https://attu.app.jyje.live
+  #     - name: OpenMediaVault
+  #       type: Ping
+  #       logo: https://avatars.githubusercontent.com/u/1897994
+  #       subtitle: NAS for NFS storage
+  #       tag: "omv #nas #nfs #storage"
+  #       url: https://omv.app.jyje.live

@@ -44,11 +44,10 @@ services:
     icon: fas fa-arrows-spin
     items:
       - name: Argo CD
-        type: Ping
         logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png
         subtitle: App deployment
         tag: "argocd #argo #gitops #cicd"
-        url: https://cd.app.jyje.live
+        url: https://github.com/argoproj/argo-cd
 
   - name: Database
     icon: fas fa-database
@@ -57,6 +56,12 @@ services:
         logo: https://cloudnative-pg.io/images/hero_image.svg
         subtitle: PostgreSQL Operator
         tag: "cnpg #operator #dbaas #psql #database"
+        url: https://github.com/cloudnative-pg/cloudnative-pg
+      - name: Milvus
+        logo: https://avatars.githubusercontent.com/u/51735404
+        subtitle: Vector database
+        tag: "milvus #vectordb #ai"
+        url: https://github.com/milvus-io/milvus
 
   - name: Storage
     icon: fas fa-hdd
@@ -65,12 +70,12 @@ services:
         logo: https://avatars.githubusercontent.com/u/51335366
         subtitle: Block storage for Kubernetes
         tag: "longhorn #storageclass #storage #rancher"
+        url: https://github.com/longhorn/longhorn
       - name: MinIO
-        type: Ping
         logo: https://min.io/resources/img/logo/MINIO_Bird.png
         subtitle: Object storage for Kubernetes
         tag: "minio #operator #dbaas #s3 #storage"
-        url: https://minio.app.jyje.live
+        url: https://github.com/minio/operator
 
   - name: AI/LLM
     icon: fas fa-flask
@@ -79,8 +84,14 @@ services:
         logo: https://docs.openwebui.com/img/logo.png
         subtitle: Open Source WebUI for LLM
         tag: "open-webui #ollama #llm #webui"
+        url: https://github.com/open-webui/open-webui
       - name: Ollama
         logo: https://ollama.com/public/ollama.png
         subtitle: Open Source LLM
         tag: "ollama #llm #open-source #ai"
         url: https://ollama.com/library
+      - name: Attu
+        logo: https://avatars.githubusercontent.com/u/18416694
+        subtitle: Vector database manager
+        tag: "attu #milvus #vectordb #ai"
+        url: https://github.com/zilliztech/attu

@@ -97,12 +97,12 @@ services:
         subtitle: Workflow engine
         tag: "argo-workflows #argo #workflow #pipeline #cicd"
         url: https://workflow.app.jyje.live/workflows
-      - name: Ollama WebUI
+      - name: Open WebUI (GPT)
         type: Ping
-        logo: https://ollama.com/public/ollama.png
-        subtitle: LLM on Raspberry Pi
-        tag: "open-webui #ollama #llm #webui"
-        url: https://ollama.app.jyje.live
+        logo: https://docs.openwebui.com/img/logo.png
+        subtitle: Interactive LLM with Ollama, OpenAI
+        tag: "open-webui #ollama #openai #gpt #llm"
+        url: https://llm.app.jyje.live
 
   - name: Management
     icon: fas fa-microchip
@@ -136,13 +136,13 @@ services:
       #   tag: "keycloak #login #iam #rabc"
       #   url: https://keycloak.app.jyje.live
 
-  - name: Storage
+  - name: Storage & Database
     icon: fas fa-hdd
     items:
-      - name: Milvus Attu
+      - name: Attu (Milvus)
         type: Ping
         logo: https://avatars.githubusercontent.com/u/18416694
-        subtitle: Vector database
+        subtitle: Vector database manager
         tag: "attu #milvus #vectordb #ai"
         url: https://attu.app.jyje.live
   #     - name: OpenMediaVault

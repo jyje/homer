@@ -22,7 +22,7 @@ services:
         tag: "raspi #arm #edge #iot #infra"
         url: https://www.raspberrypi.com
 
-      - name: MicroK8s v1.30
+      - name: MicroK8s v1.31
         logo: https://raw.githubusercontent.com/onemarc/tech-icons/main/icons/ubuntu.svg
         subtitle: Lightweight Kubernetes for Edge Devices
         tag: "microk8s #cluster #k8s #canonical #infra"
@@ -40,6 +40,12 @@ services:
         tag: "iptime #router #network #infra"
         url: https://iptime.com/iptime
 
+      - name: NVIDIA GeForce GTX 1660 Ti
+        logo: assets/tools/nvidia-logo.webp
+        subtitle: AMD64 with Ubuntu 22.04 LTS
+        tag: "nvidia #gpu #ai #ml"
+        url: https://www.nvidia.com/en-us/geforce/graphics-cards/compare/?section=compare-16
+
   - name: CI/CD
     icon: fas fa-arrows-spin
     items:
@@ -48,6 +54,11 @@ services:
         subtitle: App deployment
         tag: "argocd #argo #gitops #cicd"
         url: https://github.com/argoproj/argo-cd
+      - name: Argo Workflows
+        logo: https://argoproj.github.io/argo-workflows/assets/logo.png
+        subtitle: Workflow engine for CI/CD
+        tag: "argo-workflows #argo #workflow #pipeline #cicd"
+        url: https://github.com/argoproj/argo-workflows
 
   - name: Database
     icon: fas fa-database
@@ -80,6 +91,11 @@ services:
   - name: AI/LLM
     icon: fas fa-flask
     items:
+      - name: Argo Workflows
+        logo: https://argoproj.github.io/argo-workflows/assets/logo.png
+        subtitle: Workflow engine for data pipelines
+        tag: "argo-workflows #argo #workflow #pipeline #cicd"
+        url: https://github.com/argoproj/argo-workflows
       - name: Open WebUI
         logo: https://docs.openwebui.com/img/logo.png
         subtitle: Open Source WebUI for LLM
@@ -87,7 +103,7 @@ services:
         url: https://github.com/open-webui/open-webui
       - name: Ollama
         logo: https://ollama.com/public/ollama.png
-        subtitle: Open Source LLM
+        subtitle: Open Source LLM and Embeddings
         tag: "ollama #llm #open-source #ai"
         url: https://ollama.com/library
       - name: Attu

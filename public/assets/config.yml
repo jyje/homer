@@ -124,6 +124,7 @@ services:
         tag: "portainer #admin #catalog"
         url: "https://portainer.app.jyje.live"
       - name: Infisical
+        type: Ping
         logo: https://avatars.githubusercontent.com/u/107880645
         subtitle: Secrets manager
         tag: "infisical #secretops #valut #cicd"

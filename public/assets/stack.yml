@@ -65,7 +65,7 @@ services:
     items:
       - name: CloudNativePG
         logo: https://cloudnative-pg.io/images/hero_image.svg
-        subtitle: PostgreSQL Operator
+        subtitle: PostgreSQL operator
         tag: "cnpg #operator #dbaas #psql #database"
         url: https://github.com/cloudnative-pg/cloudnative-pg
       - name: Milvus
@@ -103,12 +103,12 @@ services:
         url: https://github.com/argoproj/argo-workflows
       - name: Open WebUI
         logo: https://docs.openwebui.com/img/logo.png
-        subtitle: Open Source WebUI for LLM
+        subtitle: Open source web UI for LLM
         tag: "open-webui #ollama #llm #webui"
         url: https://github.com/open-webui/open-webui
       - name: Ollama
         logo: https://ollama.com/public/ollama.png
-        subtitle: Open Source LLM and Embeddings
+        subtitle: Open source LLM and embeddings
         tag: "ollama #llm #open-source #ai"
         url: https://ollama.com/library
       - name: Attu

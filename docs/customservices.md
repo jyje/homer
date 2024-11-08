@@ -145,16 +145,17 @@ API key can be generated in Settings > Administration > Auth Tokens
 
 ## Ping
 
-For Ping you need to set the type to Ping and provide a url. By default the HEAD method is used but it can be configured to use GET using the optional `method` property.
+For Ping you need to set the type to Ping and provide a url. By default the HEAD method is used but it can be configured to use GET using the optional `method` property. You can also choose to show the round trip time (RTT) by setting `showRtt` to true, default is false. The RTT will be displayed in the subtitle section.
 
 ```yaml
 - name: "Awesome app"
   type: Ping
   logo: "assets/tools/sample.png"
-  subtitle: "Bookmark example"
   tag: "app"
-  url: "https://www.reddit.com/r/selfhosted/"
+  url: "https://www.wikipedia.org/"
   method: "head"
+  subtitle: "Bookmark example"
+  # showRtt: true
 ```
 
 ## Prometheus
@@ -462,7 +463,7 @@ The PiAlert service displays stats from your PiAlert server.
 ## Immich
 
 The Immich service displays stats from your Immich server. 
-The Immich server must be running at least version 1.85.0 for the correct api endpoint to work.
+The Immich server must be running at least version 1.118.0 for the correct api endpoint to work.
 
 ```yaml
 - name: "Immich"

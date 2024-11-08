@@ -59,6 +59,11 @@ services:
         subtitle: Workflow engine for CI/CD
         tag: "argo-workflows #argo #workflow #pipeline #cicd"
         url: https://github.com/argoproj/argo-workflows
+      - name: Infisical
+        logo: https://avatars.githubusercontent.com/u/107880645
+        subtitle: Secrets manager
+        tag: "infisical #secretops #vault #cicd"
+        url: https://github.com/infisical/infisical
 
   - name: Database
     icon: fas fa-database
@@ -73,11 +78,6 @@ services:
         subtitle: Vector database
         tag: "milvus #vectordb #ai"
         url: https://github.com/milvus-io/milvus
-      - name: Infisical
-        logo: https://avatars.githubusercontent.com/u/107880645
-        subtitle: Secrets manager
-        tag: "infisical #secretops #vault #cicd"
-        url: https://github.com/infisical/infisical
 
   - name: Storage
     icon: fas fa-hdd

@@ -123,6 +123,11 @@ services:
         subtitle: Cluster administration
         tag: "portainer #admin #catalog"
         url: "https://portainer.app.jyje.live"
+      - name: Infisical
+        logo: https://avatars.githubusercontent.com/u/107880645
+        subtitle: Secrets manager
+        tag: "infisical #secretops #valut #cicd"
+        url: https://infisical.app.jyje.live
       - name: Argo CD
         type: Ping
         logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png

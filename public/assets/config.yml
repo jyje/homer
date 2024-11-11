@@ -51,7 +51,8 @@ message:
   # icon: fa fa-grin
   icon: fas fa-info
   content: |
-    This is a collection of applications for my demo cluster. It is not intended for production use.
+    This is a collection of applications for my demo cluster. It is not intended for production use. 
+    🧑‍🔧 Currently, https://llm.app.jyje.live is live. Maintenance finished at 10:30 UTC+9.
 
 # Find more information on <a href='https://github.com/bastienwirtz/homer'>github.
 # Optional navbar

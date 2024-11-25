@@ -29,20 +29,14 @@
 </p>
 
 <p align="center">
- <img src="https://raw.github.com/bastienwirtz/homer/main/docs/screenshot.png" width="100%">
+ <strong>
+  <a href="https://homer-demo.netlify.app">Demo</a>
+  •
+  <a href="https://hub.docker.com/r/b4bz/homer">Docker Hub</a>
+  •
+  <a href="#getting-started">Get started</a>
+ </strong>
 </p>
-
-## Table of Contents
-
-- [Features](#features)
-- [Getting started](#get-started)
-- [Kubernetes Installation](docs/kubernetes.md)
-- [Configuration](docs/configuration.md)
-- [Theming](docs/theming.md)
-- [Smart cards](docs/customservices.md)
-- [Tips & tricks](docs/tips-and-tricks.md)
-- [Development](docs/development.md)
-- [Troubleshooting](docs/troubleshooting.md)
 
 ## Highlights
 
@@ -60,6 +54,17 @@
   - <kbd>Enter</kbd> Open the first matching result (respects the bookmark's `_target` property).
   - <kbd>Alt</kbd> (or <kbd>Option</kbd>) + <kbd>Enter</kbd> Open the first matching result in a new tab.
 
+## Table of Contents
+
+- [Getting started](#get-started)
+- [Kubernetes Installation](docs/kubernetes.md)
+- [Configuration](docs/configuration.md)
+- [Theming](docs/theming.md)
+- [Smart cards](docs/customservices.md)
+- [Tips & tricks](docs/tips-and-tricks.md)
+- [Development](docs/development.md)
+- [Troubleshooting](docs/troubleshooting.md)
+
 ## Get started
 
 Homer is a full static html/js dashboard, based on a simple yaml configuration file. See [documentation](docs/configuration.md) for information about the configuration (`assets/config.yml`) options.
@@ -68,15 +73,39 @@ It's meant to be served by an HTTP server, **it will not work if you open the in
 
 ### Using docker
 
+The configuration directory is bind mounted to make your dashboard easy to maintain.
+
+**Start the container with `docker run`**
+
 ```sh
+# Make sure your local config directory exists
 docker run -d \
+  --name homer \
   -p 8080:8080 \
-  -v </your/local/assets/>:/www/assets \
-  --restart=always \
+  --mount type=bind,source="/path/to/config/dir",target=/www/assets \
+  --restart=unless-stopped \
   b4bz/homer:latest
 ```
 
-The container will run using a user uid and gid 1000. Add `--user <your-UID>:<your-GID>` to the docker command to adjust it. Make sure this match the ownership of your assets directory.
+> [!NOTE]  
+> The container will run using a user uid and gid 1000 by default, add `--user <your-UID>:<your-GID>` to the docker command to adjust it if necessary. Make sure this match the permissions of your assets directory.
+
+**or `docker-compose`**
+
+```yaml
+services:
+  homer:
+    image: b4bz/homer
+    container_name: homer
+    volumes:
+      - /path/to/config/dir:/www/assets # Make sure your local config directory exists
+    ports:
+      - 8080:8080
+    user: 1000:1000 # default
+    environment:
+      - INIT_ASSETS=1 # default, requires the config directory to be writable for the container user (see user option)
+    restart: unless-stopped
+```
 
 **Environment variables:**
 
@@ -91,17 +120,6 @@ If you would like to change internal port of Homer from default `8080` to your p
 
 - **`IPV6_DISABLE`** (default: 0)
 Set to `1` to disable listening on IPv6.
-
-#### With docker-compose
-
-A [`docker-compose.yml`](docker-compose.yml) file is available as an example. It must be edited to match your needs. You probably want to adjust the port mapping and volume binding (equivalent to `-p` and `-v` arguments).
-
-Then launch the container:
-
-```sh
-cd /path/to/docker-compose.yml/
-docker-compose up -d
-```
 
 ### Using the release tarball (prebuilt, ready to use)
 

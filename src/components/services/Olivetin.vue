@@ -24,7 +24,7 @@ import service from "@/mixins/service.js";
 import Generic from "./Generic.vue";
 
 export default {
-  name: "Gitea",
+  name: "Olivetin",
   components: {
     Generic,
   },
@@ -33,26 +33,21 @@ export default {
     item: Object,
   },
   data: () => ({
-    fetchOk: null,
+    status: null,
     versionstring: null,
   }),
-  computed: {
-    status: function () {
-      return this.fetchOk ? "online" : "offline";
-    },
-  },
   created() {
     this.fetchStatus();
   },
   methods: {
     fetchStatus: async function () {
-      this.fetch("/swagger.v1.json")
+      this.fetch("/webUiSettings.json")
         .then((response) => {
-          this.fetchOk = true;
-          this.versionstring = response.info.version;
+          this.status = "online";
+          this.versionstring = response.CurrentVersion;
         })
         .catch((e) => {
-          this.fetchOk = false;
+          this.status = "offline";
           console.log(e);
         });
     },

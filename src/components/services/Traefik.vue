@@ -24,7 +24,7 @@ import service from "@/mixins/service.js";
 import Generic from "./Generic.vue";
 
 export default {
-  name: "Gitea",
+  name: "Traefik",
   components: {
     Generic,
   },
@@ -46,10 +46,10 @@ export default {
   },
   methods: {
     fetchStatus: async function () {
-      this.fetch("/swagger.v1.json")
+      this.fetch("/api/version")
         .then((response) => {
           this.fetchOk = true;
-          this.versionstring = response.info.version;
+          this.versionstring = response.Version;
         })
         .catch((e) => {
           this.fetchOk = false;

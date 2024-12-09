@@ -28,6 +28,7 @@ within Homer:
 - [Medusa](#medusa)
 - [Nextcloud](#nextcloud)
 - [OctoPrint / Moonraker](#octoprintmoonraker)
+- [Olivetin](#olivetin)
 - [OpenHAB](#openhab)
 - [OpenWeatherMap](#openweathermap)
 - [PaperlessNG](#paperlessng)
@@ -45,14 +46,16 @@ within Homer:
 - [Speedtest Tracker](#speedtesttracker)
 - [Tautulli](#tautulli)
 - [Tdarr](#tdarr)
+- [Traefik](#traefik)
 - [Uptime Kuma](#uptime-kuma)
+- [Wallabag](#wallabag)
 - [What's Up Docker](#whats-up-docker)
 
 > [!IMPORTANT]  
 > Using smart cards, which interact with other services, will require either that:
 >
-> - All services are exposed on the **same domain** as homer (mydomain,tld/pihole, mydomain,tld/proxmox), avoiding any cross domain request issues (CORS).
-> - All services **accecpt cross site requests** (= send the necessary CORS headers, either set directly in the service configuration if possible, or using a proxy to set the headers)
+> - All services are exposed on the **same domain** as homer (mydomain.tld/pihole, mydomain.tld/proxmox), avoiding any cross domain request issues (CORS).
+> - All services **accept cross site requests** (= send the necessary CORS headers, either set directly in the service configuration if possible, or using a proxy to set the headers)
 >
 > If you experiencing any issue, please have a look to the [troubleshooting](troubleshooting.md#my-service-card-doesnt-work-nothing-appears-or-offline-status-is-displayed-pi-hole-sonarr-ping-) page.
 
@@ -305,6 +308,17 @@ Moonraker's API mimmicks a few of OctoPrint's endpoints which makes these servic
   endpoint: "http://192.168.0.151:8080"
   display: "text" # 'text' or 'bar'. Default to `text`.
   type: "OctoPrint"
+```
+
+## Olivetin
+
+This service displays a version string instead of a subtitle. Example configuration:
+
+```yaml
+- name: Olivetin
+  type: Olivetin
+  logo: assets/tools/sample.png
+  url: https://olivetin.example.com
 ```
 
 ## OpenHAB
@@ -594,6 +608,17 @@ for transcoding on your Tdarr instance as well as the number of errored items.
   checkInterval: 5000 # (Optional) Interval (in ms) for updating the queue & error counts
 ```
 
+## Traefik
+
+This service displays a version string instead of a subtitle. Example configuration:
+
+```yaml
+- name: Traefik
+  type: Traefik
+  logo: assets/tools/sample.png
+  url: http://traefik.example.com
+```
+
 ## Uptime Kuma
 
 Using the Uptime Kuma service you can display info about your instance uptime right on your Homer dashboard.
@@ -607,6 +632,17 @@ The following configuration is available for the UptimeKuma service. Needs v1.13
   url: "http://192.168.0.151:3001"
   slug: "myCustomDashboard" # Defaults to "default" if not provided.
   type: "UptimeKuma"
+```
+
+## Wallabag
+
+This service displays a version string instead of a subtitle. Example configuration:
+
+```yaml
+- name: Wallabag
+  type: Wallabag
+  logo: assets/tools/sample.png
+  url: https://wallabag.example.com
 ```
 
 ## What's up Docker

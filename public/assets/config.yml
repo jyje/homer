@@ -10,7 +10,7 @@ defaults:
   colorTheme: light # One of 'auto', 'light', or 'dark'
 header: true
 footer: |
-  Since 2024 ⓒ <a href="https://app.jyje.live">app.jyje.live</a>
+  2023 - 2025 ⓒ <a href="https://app.jyje.live">app.jyje.live</a>
   with <a href="https://jyje.live">Jeayoung Jeon</a>.
   Powered by <a href="https://github.com/bastienwirtz/homer">Homer</a>.
 # Optional theme customization

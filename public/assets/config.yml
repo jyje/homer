@@ -99,7 +99,7 @@ services:
         url: https://workflow.app.jyje.live/workflows
       - name: Open WebUI (GPT)
         type: Ping
-        logo: https://docs.openwebui.com/img/logo.png
+        logo: https://docs.openwebui.com/images/logo.png
         subtitle: Interactive LLM with Ollama, OpenAI
         tag: "open-webui #ollama #openai #gpt #llm"
         url: https://llm.app.jyje.live

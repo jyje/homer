@@ -23,7 +23,7 @@ services:
         url: https://www.raspberrypi.com
 
       - name: MicroK8s v1.32.0
-        logo: https://assets.ubuntu.com/v1/78679228-microk8s.svg
+        logo: assets/tools/canonical-logo.png
         subtitle: Lightweight Kubernetes for Edge Devices
         tag: "microk8s #cluster #k8s #canonical #infra"
         url: https://microk8s.io

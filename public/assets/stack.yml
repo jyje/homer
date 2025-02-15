@@ -64,6 +64,11 @@ services:
         subtitle: Secrets manager
         tag: "infisical #secretops #vault #cicd"
         url: https://github.com/infisical/infisical
+      - name: GitHub ARC
+        logo: https://avatars.githubusercontent.com/in/15368
+        subtitle: Self-hosted ARM64 runners
+        tag: "github-actions #runner #cicd"
+        url: https://github.com/actions/actions-runner-controller
 
   - name: Database
     icon: fas fa-database

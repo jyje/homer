@@ -107,7 +107,7 @@ services:
         tag: "argo-workflows #argo #workflow #pipeline #cicd"
         url: https://github.com/argoproj/argo-workflows
       - name: Open WebUI
-        logo: https://docs.openwebui.com/img/logo.png
+        logo: https://docs.openwebui.com/images/logo.png
         subtitle: Open source web UI for LLM
         tag: "open-webui #ollama #llm #webui"
         url: https://github.com/open-webui/open-webui

@@ -85,18 +85,18 @@ services:
   - name: Applications
     icon: fas fa-rocket
     items:
-      - name: Grafana
-        type: Ping
-        logo: https://grafana.com/static/img/menu/grafana2.svg
-        subtitle: Cluster monitoring
-        tag: "grafana #monitoring #dashboard #plg"
-        url: https://grafana.app.jyje.live
-      - name: Argo Workflows
-        type: Ping
-        logo: https://argoproj.github.io/argo-workflows/assets/logo.png
-        subtitle: Workflow engine
-        tag: "argo-workflows #argo #workflow #pipeline #cicd"
-        url: https://workflow.app.jyje.live/workflows
+      # - name: Grafana
+      #   type: Ping
+      #   logo: https://grafana.com/static/img/menu/grafana2.svg
+      #   subtitle: Cluster monitoring
+      #   tag: "grafana #monitoring #dashboard #plg"
+      #   url: https://grafana.app.jyje.live
+      # - name: Argo Workflows
+      #   type: Ping
+      #   logo: https://argoproj.github.io/argo-workflows/assets/logo.png
+      #   subtitle: Workflow engine
+      #   tag: "argo-workflows #argo #workflow #pipeline #cicd"
+      #   url: https://workflow.app.jyje.live/workflows
       - name: Open WebUI (GPT)
         type: Ping
         logo: https://docs.openwebui.com/images/logo.png
@@ -123,12 +123,12 @@ services:
         subtitle: Cluster administration
         tag: "portainer #admin #catalog"
         url: "https://portainer.app.jyje.live"
-      - name: Infisical
-        type: Ping
-        logo: https://avatars.githubusercontent.com/u/107880645
-        subtitle: Secrets manager
-        tag: "infisical #secretops #valut #cicd"
-        url: https://infisical.app.jyje.live
+      # - name: Infisical
+      #   type: Ping
+      #   logo: https://avatars.githubusercontent.com/u/107880645
+      #   subtitle: Secrets manager
+      #   tag: "infisical #secretops #valut #cicd"
+      #   url: https://infisical.app.jyje.live
       - name: Argo CD
         type: Ping
         logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png

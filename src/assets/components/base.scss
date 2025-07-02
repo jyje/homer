@@ -4,7 +4,7 @@
 
 @mixin ellipsis() {
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -54,6 +54,10 @@
         &:hover {
           background-color: var(--card-background);
         }
+      }
+      .component-error .card {
+        border: 1px solid rgba(255, 33, 33, 0.664);
+        background-color: rgba(255, 58, 58, 0.24);
       }
 
       .message {

@@ -103,6 +103,12 @@ services:
         subtitle: Interactive LLM with Ollama, OpenAI
         tag: "open-webui #ollama #openai #gpt #llm"
         url: https://llm.app.jyje.online
+      - name: n8n
+        type: Ping
+        logo: https://avatars.githubusercontent.com/u/45487711
+        subtitle: Workflow automation
+        tag: "n8n #workflow #automation #cicd"
+        url: https://n8n.app.jyje.online
 
   - name: Management
     icon: fas fa-microchip

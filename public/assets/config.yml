@@ -10,7 +10,7 @@ defaults:
   colorTheme: light # One of 'auto', 'light', or 'dark'
 header: true
 footer: |
-  2023 - 2025 ⓒ <a href="https://app.jyje.online">app.jyje.online</a>
+  2023 - 2026 ⓒ <a href="https://app.jyje.online">app.jyje.online</a>
   with <a href="https://jyje.online">Jeayoung Jeon</a>.
   Powered by <a href="https://github.com/bastienwirtz/homer">Homer</a>.
 # Optional theme customization
@@ -97,7 +97,7 @@ services:
       #   subtitle: Workflow engine
       #   tag: "argo-workflows #argo #workflow #pipeline #cicd"
       #   url: https://workflow.app.jyje.online/workflows
-      - name: Open WebUI (GPT)
+      - name: Open WebUI (AI Chat)
         type: Ping
         logo: https://docs.openwebui.com/images/logo.png
         subtitle: Interactive LLM with Ollama, OpenAI

@@ -93,7 +93,7 @@ services:
         tag: "longhorn #storageclass #storage #rancher"
         url: https://github.com/longhorn/longhorn
       - name: MinIO
-        logo: https://min.io/resources/img/logo/MINIO_Bird.png
+        logo: https://avatars.githubusercontent.com/u/695951
         subtitle: Object storage for Kubernetes
         tag: "minio #operator #dbaas #s3 #storage"
         url: https://github.com/minio/operator

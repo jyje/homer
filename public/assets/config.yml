@@ -133,8 +133,9 @@ services:
         type: Ping
         logo: https://avatars.githubusercontent.com/u/107880645
         subtitle: Secrets manager
-        tag: "infisical #secretops #valut #cicd"
-        url: https://infisical.app.jyje.online
+        tag: "infisical #devsecops #valut #cicd"
+        url: 'https://infisical.app.jyje.online'
+        successCodes: [200, 304]
       - name: Argo CD
         type: Ping
         logo: https://argo-cd.readthedocs.io/en/stable/assets/logo.png

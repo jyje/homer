@@ -83,6 +83,11 @@ services:
         subtitle: Vector database
         tag: "milvus #vectordb #ai"
         url: https://github.com/milvus-io/milvus
+      - name: Qdrant
+        logo: https://avatars.githubusercontent.com/u/73504361
+        subtitle: Vector database
+        tag: "qdrant #vectordb #ai"
+        url: https://github.com/qdrant/qdrant
 
   - name: Storage
     icon: fas fa-hdd

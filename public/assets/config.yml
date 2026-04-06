@@ -147,15 +147,19 @@ services:
       #   tag: "keycloak #login #iam #rabc"
       #   url: https://keycloak.app.jyje.online
 
-  - name: Storage & Database
-    icon: fas fa-hdd
-    items:
-      - name: Attu (Milvus)
-        type: Ping
-        logo: https://avatars.githubusercontent.com/u/18416694
-        subtitle: Vector database manager
-        tag: "attu #milvus #vectordb #ai"
-        url: https://attu.app.jyje.online
+  # - name: Storage & Database
+  #   icon: fas fa-hdd
+  #   items:
+  #     - name: Attu (Milvus)
+  #       type: Ping
+  #       logo: https://avatars.githubusercontent.com/u/18416694
+  #       subtitle: Vector database manager
+  #       tag: "attu #milvus #vectordb #ai"
+  #       url: https://attu.app.jyje.online
+  #     - name: Qdrant
+  #       logo: https://avatars.githubusercontent.com/u/73504361
+  #       subtitle: Vector database
+  #       tag: "qdrant #vectordb #ai"
   #     - name: OpenMediaVault
   #       type: Ping
   #       logo: https://avatars.githubusercontent.com/u/1897994
